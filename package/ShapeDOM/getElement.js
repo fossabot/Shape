@@ -7,28 +7,32 @@
 /**
  * Require Pack
  */
-//
+
 /**
  * getElements Model
  */
 //Begin GetElements;
 function seleteElement(GetSeleteElements) {
+    var ElementType = null;
     switch (GetSeleteElements) {
         case HTMLElement:
-            return 1;
+            return ElementType = 'isGetFromID';
             break;
         case HTMLCollection:
-            return 2;
+            return ElementType = 'isGetFromName';
             break;
         case NodeList:
-            return 3;
+            return ElementType = 'isGetFromClassName';
             break;
         default:
             break;
     }
     return
 }
-
+/**
+ * Render A Element
+ * @param {$_} SeleteElements 
+ */
 function $_(SeleteElements) {
     var result = seleteElement(SeleteElements);
     return result;
