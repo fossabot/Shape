@@ -5,24 +5,35 @@
 
 'use strict';
 /**
+ * Require Pack
+ */
+//
+/**
  * getElements Model
  */
-//INIT THE CHOOSE
-export function $_(SeleteElements) {
-    selete(SeleteElements);
-}
-var SeleteElements;
 //Begin GetElements;
-function selete(GetSeleteElements) {
-    if (GetSeleteElements == ) {
-
-    }
+function seleteElement(GetSeleteElements) {
     switch (GetSeleteElements) {
-        case:
-
+        case HTMLElement:
+            return 1;
             break;
-
-        default: break;
+        case HTMLCollection:
+            return 2;
+            break;
+        case NodeList:
+            return 3;
+            break;
+        default:
+            break;
     }
     return
 }
+
+function $_(SeleteElements) {
+    var result = seleteElement(SeleteElements);
+    return result;
+}
+$_.render = function() {
+
+}
+$_.render();
