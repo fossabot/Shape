@@ -19,7 +19,12 @@
     function isObject() {
 
     }
-
+    function _isArray(value){
+        isArray(value);
+    }
+    function _isString(){
+        
+    }
     function isHTMLElements(CheckBox) {
 
     }
