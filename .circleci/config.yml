@@ -7,4 +7,5 @@ jobs:
       - checkout
       - run:
           name: "Testing"
-          command: sudo apt-get update| sudo apt install nodejs | sudo nodejs
+          command: sudo apt-get update| sudo apt install nodejs | 
+                   ls | node Shape.js
