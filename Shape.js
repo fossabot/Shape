@@ -6,7 +6,7 @@
 'use strict';
 !function(globel, factory) {
   /**
-     * INIT
+     * INIT From Most JS Framework Begin
   */
   typeof exports == "object" && typeof module !== "undefined" ? module.exports = factory() :
     typeof define === "function" && define.amd ? define(factory) : globel.shape = globel;
@@ -14,8 +14,9 @@
   /**
      * HTMLElement Module
   */
-  var HTMLElements = { };
+  var Shape;
 
+  var initMsg = "Powered By Shape.js The repository is on Github. link is here : https://github.com/Summerytime/Shape"
   function _isObject(value) {
     
   }
@@ -33,11 +34,17 @@
       return false;
     }
   }
-  function SeteleHTMLElements(value) {
-    
+
+  function seletor(el){
   }
+
   function _toString(value)
   {
-    Element.toString(value);
+    var result = Element.toString(value);
+	  return result;
+  }
+
+  function Exception(){
+	  var errorLog = console.log
   }
 });
